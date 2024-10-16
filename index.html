@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索页面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+    .header a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+    .search-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+    .logo {
+      width: 270px;
+      height: 129px;
+      margin-bottom: 20px;
+    }
+    .search-box {
+      display: flex;
+      width: 640px;
+    }
+    .search-input {
+      flex-grow: 1;
+      height: 44px;
+      padding: 0 16px;
+      font-size: 16px;
+      border: 2px solid #4e6ef2;
+      border-right: none;
+      border-radius: 10px 0 0 10px;
+      outline: none;
+    }
+    .search-button {
+      width: 108px;
+      height: 48px;
+      background-color: #4e6ef2;
+      color: white;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    .trending {
+      margin-top: 20px;
+      width: 640px;
+    }
+    .trending a {
+      display: inline-block;
+      margin-right: 20px;
+      color: #666;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <a href="#">新闻</a>
+  <a href="#">hao123</a>
+  <a href="#">地图</a>
+  <a href="#">贴吧</a>
+  <a href="#">视频</a>
+  <a href="#">图片</a>
+  <a href="#">网盘</a>
+  <a href="#">更多</a>
+</div>
+<div class="search-container">
+<!--  <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Baidu.svg" alt="Logo" class="logo">-->
+  <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="Logo" class="logo">
+  <div class="search-box">
+    <input type="text" class="search-input" id="searchInput">
+    <button class="search-button" onclick="search()">百度一下</button>
+  </div>
+<!--  <div class="trending">-->
+<!--    <a href="#">热点1</a>-->
+<!--    <a href="#">热点2</a>-->
+<!--    <a href="#">热点3</a>-->
+<!--    <a href="#">热点4</a>-->
+<!--    <a href="#">热点5</a>-->
+<!--  </div>-->
+</div>
+<script>
+  function search() {
+    var searchTerm = document.getElementById('searchInput').value;
+    if (searchTerm === '王玉柯') {
+      window.location.href = 'wyk.html';
+    } else {
+      alert('没有找到相关信息');
+    }
+  }
+</script>
+</body>
+</html>

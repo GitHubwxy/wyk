@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王玉柯 - 个人简介</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: center;  /* 让整个容器内容居中 */
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            text-align: center;  /* 让文字内容居中 */
+            margin: 0 auto;      /* 让 h1 本身在 flex 容器中水平居中 */
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;  /* 给图片左侧添加一些间距 */
+        }
+        .profile-content {
+            display: grid;
+            /*grid-template-columns: 2fr 1fr;*/
+            grid-gap: 10px;
+        }
+        .personal-info, .work-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .section {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: #2980b9;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .info-item {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #34495e;
+        }
+        @media (max-width: 768px) {
+            .profile-content {
+                grid-template-columns: 1fr;
+            }
+            .profile-img {
+                height: 150px;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            h1 {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 头部，标题和图片水平排列，且居中 -->
+    <div class="header">
+<!--        <div>-->
+        <h1>王玉柯 - 个人简介</h1>
+<!--        <div class="info-item">-->
+<!--            <span class="info-label">目前岗位：</span>网络客服专员-->
+<!--            </div>-->
+<!--            <div>-->
+<!--            <span class="info-label">竞聘岗位：</span>网络客服主管-->
+<!--        </div>-->
+
+        <img src="img.png" alt="王玉柯" class="profile-img">
+    </div>
+
+    <!-- 主要内容部分 -->
+    <div class="profile-content">
+        <div class="personal-info">
+            <div class="section">
+                <h2>个人信息</h2>
+                <div class="info-item">
+                    <span class="info-label">姓 名：</span>王玉柯
+                </div>
+                <div class="info-item">
+                    <span class="info-label">年 龄：</span>26岁
+                </div>
+                <div class="info-item">
+                    <span class="info-label">籍 贯：</span>河南开封
+                </div>
+                <div class="info-item">
+                    <span class="info-label">入职时间：</span>2020年5月18日
+                </div>
+                <div class="info-item">
+                    <span class="info-label">目前岗位：</span>网络客服专员
+                </div>
+                <div class="info-item">
+                    <span class="info-label">竞聘岗位：</span>网络客服主管
+                </div>
+                <div class="info-item">
+                    <span class="info-label">MBTI人格：</span>ISFJ
+                </div>
+            </div>
+            <div class="section">
+                <h2>工作内容</h2>
+                <ul>
+                    <li>400进线处理</li>
+                    <li>签约来访表数据源查询</li>
+                    <li>年度数据汇总整理</li>
+                    <li>使用软件400、ec、dp、易聊等日常维护问题对接处理解决</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>部门工作协调</h2>
+                <ul>
+                    <li>各部门工作对接</li>
+                    <li>行政工作落地</li>
+                    <li>第三方软件对接</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
